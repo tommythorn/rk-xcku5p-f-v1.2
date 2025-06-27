@@ -1,0 +1,155 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Dec  4 19:33:35 2024
+| Host         : DESKTOP-IDDMGFU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file eth_udp_loop_control_sets_placed.rpt
+| Design       : eth_udp_loop
+| Device       : xcku5p
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    77 |
+|    Minimum number of control sets                        |    77 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    59 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    77 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     8 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |    20 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    43 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              17 |            4 |
+| No           | No                    | Yes                    |              85 |           47 |
+| No           | Yes                   | No                     |               6 |            3 |
+| Yes          | No                    | No                     |             113 |           43 |
+| Yes          | No                    | Yes                    |            1260 |          243 |
+| Yes          | Yes                   | No                     |             124 |           25 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+----------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|              Clock Signal             |                                               Enable Signal                                              |                                                           Set/Reset Signal                                                          | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------+----------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/tx_bit_sel0                                                                               | sys_rst_n_IBUF_inst/O                                                                                                               |                1 |              2 |         2.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/tx_bit_sel0                                                                             | sys_rst_n_IBUF_inst/O                                                                                                               |                1 |              2 |         2.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_tx/tx_en_d2_reg_0[0]                                                                         | sys_rst_n_IBUF_inst/O                                                                                                               |                2 |              2 |         1.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_eth_ctrl/protocol_sw[1]_i_1_n_0                                                                        | sys_rst_n_IBUF_inst/O                                                                                                               |                1 |              2 |         2.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_tx/data_cnt[4]_i_1_n_0                                                                       | sys_rst_n_IBUF_inst/O                                                                                                               |                3 |              5 |         1.67 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/cnt0                                                                                    | sys_rst_n_IBUF_inst/O                                                                                                               |                4 |              5 |         1.25 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/cnt                                                                                       | sys_rst_n_IBUF_inst/O                                                                                                               |                3 |              5 |         1.67 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/real_add_cnt0                                                                           | sys_rst_n_IBUF_inst/O                                                                                                               |                2 |              5 |         2.50 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/real_add_cnt0                                                                             | sys_rst_n_IBUF_inst/O                                                                                                               |                2 |              5 |         2.50 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/cnt0                                                                                      | sys_rst_n_IBUF_inst/O                                                                                                               |                3 |              5 |         1.67 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/cnt0                                                                                    | sys_rst_n_IBUF_inst/O                                                                                                               |                3 |              5 |         1.67 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/cnt0                                                                                      | sys_rst_n_IBUF_inst/O                                                                                                               |                3 |              5 |         1.67 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_tx/cnt[5]_i_1_n_0                                                                            | sys_rst_n_IBUF_inst/O                                                                                                               |                2 |              6 |         3.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                          | fifo_generator_0_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gcc_rst.sckt_wr_rst_cc_reg[0]_0 |                3 |              6 |         2.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/eth_type[11]                                                                              | sys_rst_n_IBUF_inst/O                                                                                                               |                1 |              8 |         8.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/op_data[15]                                                                               | sys_rst_n_IBUF_inst/O                                                                                                               |                1 |              8 |         8.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/gmii_tx_en0                                                                               | sys_rst_n_IBUF_inst/O                                                                                                               |                6 |              8 |         1.33 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_tx/gmii_txd[7]_i_1_n_0                                                                       | sys_rst_n_IBUF_inst/O                                                                                                               |                5 |              8 |         1.60 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/icmp_seq[15]_i_1_n_0                                                                    | sys_rst_n_IBUF_inst/O                                                                                                               |                1 |              8 |         8.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/udp_byte_num[15]_i_1_n_0                                                                  | sys_rst_n_IBUF_inst/O                                                                                                               |                3 |              8 |         2.67 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/icmp_type0                                                                              | sys_rst_n_IBUF_inst/O                                                                                                               |                1 |              8 |         8.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/gmii_tx_en0                                                                             | sys_rst_n_IBUF_inst/O                                                                                                               |                7 |              8 |         1.14 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/udp_byte_num[7]_i_1_n_0                                                                   | sys_rst_n_IBUF_inst/O                                                                                                               |                4 |              8 |         2.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/total_length[15]_i_1_n_0                                                                | sys_rst_n_IBUF_inst/O                                                                                                               |                1 |              8 |         8.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/eth_type[15]_i_1__1_n_0                                                                   | sys_rst_n_IBUF_inst/O                                                                                                               |                2 |              8 |         4.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/rec_en_reg_0[0]                                                                         | sys_rst_n_IBUF_inst/O                                                                                                               |                2 |              8 |         4.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/eth_type[15]_i_1__0_n_0                                                                 | sys_rst_n_IBUF_inst/O                                                                                                               |                1 |              8 |         8.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/icmp_rx_data_d00                                                                        | sys_rst_n_IBUF_inst/O                                                                                                               |                4 |              8 |         2.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/icmp_id[7]_i_1_n_0                                                                      | sys_rst_n_IBUF_inst/O                                                                                                               |                5 |              8 |         1.60 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/icmp_id[15]_i_1_n_0                                                                     | sys_rst_n_IBUF_inst/O                                                                                                               |                1 |              8 |         8.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/icmp_seq[7]_i_1_n_0                                                                     | sys_rst_n_IBUF_inst/O                                                                                                               |                4 |              8 |         2.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/op_data[0]                                                                                | sys_rst_n_IBUF_inst/O                                                                                                               |                2 |              8 |         4.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/total_length[7]_i_1_n_0                                                                 | sys_rst_n_IBUF_inst/O                                                                                                               |                2 |              8 |         4.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_eth_ctrl/gmii_tx_en_i_1__1_n_0                                                                         | sys_rst_n_IBUF_inst/O                                                                                                               |                2 |              9 |         4.50 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/ip_head[5][15]_i_1_n_0                                                                  |                                                                                                                                     |               11 |             16 |         1.45 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/E[0]                                                                                    | sys_rst_n_IBUF_inst/O                                                                                                               |                5 |             16 |         3.20 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/icmp_data_length0                                                                       | sys_rst_n_IBUF_inst/O                                                                                                               |                3 |             16 |         5.33 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/rec_pkt_done0                                                                           | sys_rst_n_IBUF_inst/O                                                                                                               |                7 |             16 |         2.29 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/ip_head[2][15]_i_2_n_0                                                                  | u_icmp/u_icmp_tx/ip_head[2][15]_i_1__0_n_0                                                                                          |                5 |             16 |         3.20 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/data_byte_num0                                                                            | sys_rst_n_IBUF_inst/O                                                                                                               |                3 |             16 |         5.33 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/rec_pkt_done0                                                                             | sys_rst_n_IBUF_inst/O                                                                                                               |                4 |             16 |         4.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/data_cnt0                                                                                 | sys_rst_n_IBUF_inst/O                                                                                                               |                4 |             16 |         4.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/ip_head[2][15]_i_1_n_0                                                                    |                                                                                                                                     |                7 |             16 |         2.29 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/ip_head[1][31]_i_1_n_0                                                                    | sys_rst_n_IBUF_inst/O                                                                                                               |                3 |             16 |         5.33 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/data_cnt0                                                                               | sys_rst_n_IBUF_inst/O                                                                                                               |                7 |             16 |         2.29 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                          |                                                                                                                                     |                4 |             18 |         4.50 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/check_buffer0                                                                             | sys_rst_n_IBUF_inst/O                                                                                                               |                5 |             20 |         4.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/check_buffer0                                                                           | sys_rst_n_IBUF_inst/O                                                                                                               |                5 |             20 |         4.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | fifo_generator_0_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0]       | fifo_generator_0_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gcc_rst.sckt_wr_rst_cc_reg[0]_0 |                3 |             22 |         7.33 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | fifo_generator_0_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/wr_en_0[0] | fifo_generator_0_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gcc_rst.sckt_wr_rst_cc_reg[0]_0 |                4 |             22 |         5.50 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/des_ip0                                                                                 | sys_rst_n_IBUF_inst/O                                                                                                               |                3 |             24 |         8.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/rec_data[7]_i_1_n_0                                                                     | sys_rst_n_IBUF_inst/O                                                                                                               |                6 |             24 |         4.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/des_ip0                                                                                   | sys_rst_n_IBUF_inst/O                                                                                                               |                2 |             24 |        12.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/rec_data[7]_i_1__0_n_0                                                                    | sys_rst_n_IBUF_inst/O                                                                                                               |                7 |             24 |         3.43 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/tx_data_num0                                                                            | sys_rst_n_IBUF_inst/O                                                                                                               |                5 |             31 |         6.20 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/reply_checksum_add0_0                                                                   | sys_rst_n_IBUF_inst/O                                                                                                               |                7 |             32 |         4.57 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_tx/E[0]                                                                                      | sys_rst_n_IBUF_inst/O                                                                                                               |               13 |             32 |         2.46 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/src_ip_t                                                                                  | sys_rst_n_IBUF_inst/O                                                                                                               |               11 |             32 |         2.91 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/reply_checksum0                                                                         | sys_rst_n_IBUF_inst/O                                                                                                               |               10 |             32 |         3.20 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/ip_head[6][31]_i_1_n_0                                                                    |                                                                                                                                     |               13 |             32 |         2.46 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/ip_head[6][31]_i_1_n_0                                                                    | u_udp/u_udp_tx/ip_head[4][29]_i_1_n_0                                                                                               |                7 |             32 |         4.57 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/E[0]                                                                                      | sys_rst_n_IBUF_inst/O                                                                                                               |               12 |             32 |         2.67 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/ip_head[6][31]_i_1__0_n_0                                                               | u_icmp/u_icmp_tx/ip_head[4][29]_i_1__0_n_0                                                                                          |                6 |             32 |         5.33 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/des_ip_t                                                                                  | sys_rst_n_IBUF_inst/O                                                                                                               |                7 |             32 |         4.57 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/crc_en_reg_0[0]                                                                         | sys_rst_n_IBUF_inst/O                                                                                                               |               12 |             32 |         2.67 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/check_buffer_icmp0                                                                      | sys_rst_n_IBUF_inst/O                                                                                                               |                8 |             32 |         4.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/tx_data_num0                                                                              | sys_rst_n_IBUF_inst/O                                                                                                               |               11 |             45 |         4.09 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/eth_head_reg[5]0                                                                          | sys_rst_n_IBUF_inst/O                                                                                                               |               11 |             48 |         4.36 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/E[0]                                                                                      | sys_rst_n_IBUF_inst/O                                                                                                               |                9 |             48 |         5.33 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/src_mac_t                                                                                 | sys_rst_n_IBUF_inst/O                                                                                                               |               16 |             48 |         3.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/des_mac0                                                                                  | sys_rst_n_IBUF_inst/O                                                                                                               |                8 |             48 |         6.00 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/des_mac_t0                                                                                | sys_rst_n_IBUF_inst/O                                                                                                               |               10 |             48 |         4.80 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_rx/des_mac0                                                                                | sys_rst_n_IBUF_inst/O                                                                                                               |                5 |             48 |         9.60 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_icmp/u_icmp_tx/ip_head[6][31]_i_1__0_n_0                                                               |                                                                                                                                     |               18 |             49 |         2.72 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/src_ip_reg[1]_0[0]                                                                        | sys_rst_n_IBUF_inst/O                                                                                                               |               14 |             80 |         5.71 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/arp_rx_done_i_1_n_0                                                                       | sys_rst_n_IBUF_inst/O                                                                                                               |               21 |             81 |         3.86 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                          | sys_rst_n_IBUF_inst/O                                                                                                               |               47 |             85 |         1.81 |
++---------------------------------------+----------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,1 @@
+vopt +acc=npr -l elaborate.log +acc=npr -suppress 10016  -L xil_defaultlib -L xpm -L microblaze_v11_0_11 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_12 -L lmb_bram_if_cntlr_v4_0_22 -L blk_mem_gen_v8_4_6 -L iomodule_v3_1_8 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.ddr4_0 xil_defaultlib.glbl -o ddr4_0_opt

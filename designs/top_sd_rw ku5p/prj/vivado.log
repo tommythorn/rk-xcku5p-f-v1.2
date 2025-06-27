@@ -1,0 +1,132 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Jun 27 20:01:49 2024
+# Process ID: 17896
+# Current directory: E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16728 E:\ZEYI\FPGA\K7\K325T\v231\6_top_sd_rw\prj\top_sd_rw.xpr
+# Log file: E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/vivado.log
+# Journal file: E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj\vivado.jou
+# Running On: DESKTOP-ND6K090, OS: Windows, CPU Frequency: 3800 MHz, CPU Physical cores: 16, Host memory: 68641 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/AMD/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/AMD/Xilinx/Vivado/2023.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 2985.379 ; gain = 388.859
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0
+set_property -dict [list \
+  CONFIG.C_DATA_DEPTH {4096} \
+  CONFIG.C_NUM_OF_PROBES {8} \
+  CONFIG.C_PROBE1_WIDTH {32} \
+  CONFIG.C_PROBE2_WIDTH {16} \
+  CONFIG.C_PROBE4_WIDTH {16} \
+  CONFIG.C_PROBE5_WIDTH {32} \
+] [get_ips ila_0]
+generate_target {instantiation_template} [get_files e:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+generate_target all [get_files  e:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.gen/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_0
+export_ip_user_files -of_objects [get_files e:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.srcs/sources_1/ip/ila_0/ila_0.xci]
+launch_runs ila_0_synth_1 -jobs 16
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_0
+[Thu Jun 27 20:03:36 2024] Launched ila_0_synth_1...
+Run output will be captured here: E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files e:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.srcs/sources_1/ip/ila_0/ila_0.xci] -directory E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.ip_user_files/sim_scripts -ip_user_files_dir E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.ip_user_files -ipstatic_source_dir E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.cache/compile_simlib/modelsim} {questa=E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.cache/compile_simlib/questa} {riviera=E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.cache/compile_simlib/riviera} {activehdl=E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Thu Jun 27 20:06:06 2024] Launched synth_1...
+Run output will be captured here: E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.runs/synth_1/runme.log
+[Thu Jun 27 20:06:06 2024] Launched impl_1...
+Run output will be captured here: E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2023.1.0
+  ****** Build date   : Apr 10 2023-23:59:24
+    **** Build number : 2023.1.1681142364
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.runs/impl_1/top_sd_rw.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.runs/impl_1/top_sd_rw.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.runs/impl_1/top_sd_rw.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'your_instance_name' at location 'uuid_C43761E0C03650398C6907A263A83E64' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.runs/impl_1/top_sd_rw.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.runs/impl_1/top_sd_rw.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.runs/impl_1/top_sd_rw.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3660.277 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jun-27 20:10:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jun-27 20:10:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {wr_start_en} }
+export_ip_user_files -of_objects  [get_files e:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset ila_0 e:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.srcs/sources_1/ip/ila_0/ila_0.xci
+INFO: [Project 1-386] Moving file 'e:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.srcs/sources_1/ip/ila_0/ila_0.xci' from fileset 'ila_0' to fileset 'sources_1'.
+file delete -force e:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.srcs/sources_1/ip/ila_0
+file delete -force e:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.gen/sources_1/ip/ila_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Thu Jun 27 20:12:19 2024] Launched synth_1...
+Run output will be captured here: E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.runs/synth_1/runme.log
+[Thu Jun 27 20:12:19 2024] Launched impl_1...
+Run output will be captured here: E:/ZEYI/FPGA/K7/K325T/v231/6_top_sd_rw/prj/top_sd_rw.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 27 20:35:32 2024...

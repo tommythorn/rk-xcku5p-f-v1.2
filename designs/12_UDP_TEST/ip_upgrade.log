@@ -1,0 +1,37 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Dec  4 17:28:47 2024
+| Host         : DESKTOP-IDDMGFU running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu15eg-ffvb1156-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clk_wiz_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 6) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Dec  4 17:28:28 2024
+| Host         : DESKTOP-IDDMGFU running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu15eg-ffvb1156-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'async_fifo_2048x8b'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of async_fifo_2048x8b (xilinx.com:ip:fifo_generator:13.2) from (Rev. 5) to (Rev. 8)
+

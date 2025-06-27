@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Dec  2 20:18:01 2024
+# Process ID: 37496
+# Current directory: d:/VIVADO23/ku5p/ddr4_0_ex
+# Command line: vivado.exe -notrace -source d:/VIVADO23/ku5p/ddr4_test/ddr4_test.gen/sources_1/ip/ddr4_0/ddr4_0_ex.tcl
+# Log file: d:/VIVADO23/ku5p/ddr4_0_ex/vivado.log
+# Journal file: d:/VIVADO23/ku5p/ddr4_0_ex\vivado.jou
+# Running On: DESKTOP-IDDMGFU, OS: Windows, CPU Frequency: 3700 MHz, CPU Physical cores: 24, Host memory: 34265 MB
+#-----------------------------------------------------------
+start_gui
+source d:/VIVADO23/ku5p/ddr4_test/ddr4_test.gen/sources_1/ip/ddr4_0/ddr4_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROBES.FILE {d:/VIVADO23/ku5p/ddr4_0_ex/ddr4_0_ex.runs/impl_1/example_top.ltx} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {d:/VIVADO23/ku5p/ddr4_0_ex/ddr4_0_ex.runs/impl_1/example_top.ltx} [get_hw_devices xcku5p_0]
+set_property PROGRAM.FILE {d:/VIVADO23/ku5p/ddr4_0_ex/ddr4_0_ex.runs/impl_1/example_top.bit} [get_hw_devices xcku5p_0]
+program_hw_devices [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file d:/VIVADO23/ku5p/ddr4_0_ex/example_top.xsa
+write_cfgmem  -format mcs -size 64 -interface SPIx4 -loadbit {up 0x00000000 "D:/VIVADO23/ku5p/ddr4_0_ex/ddr4_0_ex.runs/impl_1/example_top.bit" } -file "D:/VIVADO23/ku5p/ddr4_0_ex/ddr4_test.mcs"
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {d:/VIVADO23/ku5p/ddr4_0_ex/ddr4_0_ex.runs/impl_1/example_top.bit} [get_hw_devices xcku5p_0]
+set_property PROBES.FILE {d:/VIVADO23/ku5p/ddr4_0_ex/ddr4_0_ex.runs/impl_1/example_top.ltx} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {d:/VIVADO23/ku5p/ddr4_0_ex/ddr4_0_ex.runs/impl_1/example_top.ltx} [get_hw_devices xcku5p_0]
+current_hw_device [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xcku5p_0] 0] [lindex [get_cfgmem_parts {mx25u51245g-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+set_property PROGRAM.FILES [list "D:/VIVADO23/ku5p/ddr4_0_ex/ddr4_test.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+set_property PROGRAM.VERIFY  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xcku5p_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xcku5p_0] 0]]; program_hw_devices [lindex [get_hw_devices xcku5p_0] 0]; refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0];
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
+endgroup
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]

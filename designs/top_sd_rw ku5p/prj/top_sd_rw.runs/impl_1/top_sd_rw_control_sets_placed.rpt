@@ -1,0 +1,105 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Sat May 10 11:07:20 2025
+| Host         : DESKTOP-IDDMGFU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_sd_rw_control_sets_placed.rpt
+| Design       : top_sd_rw
+| Device       : xcku5p
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    27 |
+|    Minimum number of control sets                        |    27 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    34 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    27 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     6 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              85 |           34 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               2 |            1 |
+| Yes          | No                    | Yes                    |             223 |           51 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+----------------------------------------------------+-----------------------------------+------------------+----------------+--------------+
+|        Clock Signal        |                    Enable Signal                   |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------+----------------------------------------------------+-----------------------------------+------------------+----------------+--------------+
+| ~cur_state_reg[6]_i_2_n_0  |                                                    | u_sd_ctrl_top/u_sd_init/sys_rst_n |                1 |              2 |         2.00 |
+|  u_clk_wiz_0/inst/clk_out1 | u_sd_ctrl_top/u_sd_read/cmd_rd[12]_i_1_n_0         | u_sd_ctrl_top/u_sd_init/sys_rst_n |                2 |              2 |         1.00 |
+|  u_clk_wiz_0/inst/clk_out1 | u_sd_ctrl_top/u_sd_write/cmd_wr[12]_i_1_n_0        | u_sd_ctrl_top/u_sd_init/sys_rst_n |                1 |              2 |         2.00 |
+| ~cur_state_reg[6]_i_2_n_0  | u_sd_ctrl_top/u_sd_init/res_data[47]_i_1_n_0       |                                   |                1 |              4 |         4.00 |
+|  u_clk_wiz_0/inst/clk_out1 | u_sd_ctrl_top/u_sd_read/rd_ctrl_cnt[3]_i_1_n_0     | u_sd_ctrl_top/u_sd_init/sys_rst_n |                2 |              4 |         2.00 |
+|  u_clk_wiz_0/inst/clk_out1 | u_sd_ctrl_top/u_sd_write/bit_cnt[3]_i_1_n_0        | u_sd_ctrl_top/u_sd_init/sys_rst_n |                1 |              4 |         4.00 |
+|  u_clk_wiz_0/inst/clk_out1 | u_sd_ctrl_top/u_sd_write/wr_ctrl_cnt[3]_i_1_n_0    | u_sd_ctrl_top/u_sd_init/sys_rst_n |                2 |              4 |         2.00 |
+|  u_clk_wiz_0/inst/clk_out2 | u_sd_ctrl_top/u_sd_read/rx_flag_reg_n_0            | u_sd_ctrl_top/u_sd_init/sys_rst_n |                2 |              4 |         2.00 |
+|  cur_state_reg[6]_i_2_n_0  | u_sd_ctrl_top/u_sd_init/cmd_bit_cnt                | u_sd_ctrl_top/u_sd_init/sys_rst_n |                2 |              6 |         3.00 |
+|  u_clk_wiz_0/inst/clk_out1 | u_sd_ctrl_top/u_sd_read/cmd_bit_cnt[5]_i_1__0_n_0  | u_sd_ctrl_top/u_sd_init/sys_rst_n |                1 |              6 |         6.00 |
+|  u_clk_wiz_0/inst/clk_out1 | u_sd_ctrl_top/u_sd_write/sel                       | u_sd_ctrl_top/u_sd_init/sys_rst_n |                2 |              6 |         3.00 |
+|  u_clk_wiz_0/inst/clk_out2 | u_sd_ctrl_top/u_sd_read/res_bit_cnt[5]_i_1__1_n_0  | u_sd_ctrl_top/u_sd_init/sys_rst_n |                2 |              6 |         3.00 |
+|  u_clk_wiz_0/inst/clk_out2 | u_sd_ctrl_top/u_sd_write/res_bit_cnt[5]_i_1__0_n_0 | u_sd_ctrl_top/u_sd_init/sys_rst_n |                2 |              6 |         3.00 |
+|  u_clk_wiz_0/inst/clk_out2 |                                                    | u_sd_ctrl_top/u_sd_init/sys_rst_n |                5 |              7 |         1.40 |
+|  u_clk_wiz_0/inst/clk_out1 | u_sd_ctrl_top/u_sd_write/data_cnt[7]_i_1_n_0       | u_sd_ctrl_top/u_sd_init/sys_rst_n |                2 |              8 |         4.00 |
+|  u_clk_wiz_0/inst/clk_out1 | u_data_gen/rd_right_cnt                            | u_sd_ctrl_top/u_sd_init/sys_rst_n |                3 |              9 |         3.00 |
+|  u_clk_wiz_0/inst/clk_out2 | u_sd_ctrl_top/u_sd_read/rx_data_cnt[8]_i_1_n_0     | u_sd_ctrl_top/u_sd_init/sys_rst_n |                3 |              9 |         3.00 |
+|  cur_state_reg[6]_i_2_n_0  |                                                    | u_sd_ctrl_top/u_sd_init/sys_rst_n |                8 |             11 |         1.38 |
+|  cur_state_reg[6]_i_2_n_0  | u_sd_ctrl_top/u_sd_init/poweron_cnt                | u_sd_ctrl_top/u_sd_init/sys_rst_n |                4 |             13 |         3.25 |
+|  cur_state_reg[6]_i_2_n_0  | u_sd_ctrl_top/u_sd_init/over_time_cnt              | u_sd_ctrl_top/u_sd_init/sys_rst_n |                6 |             16 |         2.67 |
+|  u_clk_wiz_0/inst/clk_out1 | u_sd_ctrl_top/u_sd_write/wr_req_reg_0[0]           | u_sd_ctrl_top/u_sd_init/sys_rst_n |                3 |             16 |         5.33 |
+|  u_clk_wiz_0/inst/clk_out1 | u_sd_ctrl_top/u_sd_write/wr_data_t[15]_i_1_n_0     | u_sd_ctrl_top/u_sd_init/sys_rst_n |                5 |             16 |         3.20 |
+|  u_clk_wiz_0/inst/clk_out1 | u_sd_ctrl_top/u_sd_read/rx_en_t                    | u_sd_ctrl_top/u_sd_init/sys_rst_n |                4 |             16 |         4.00 |
+|  u_clk_wiz_0/inst/clk_out1 | u_sd_ctrl_top/u_sd_read/E[0]                       | u_sd_ctrl_top/u_sd_init/sys_rst_n |                3 |             16 |         5.33 |
+|  u_clk_wiz_0/inst/clk_out2 | u_sd_ctrl_top/u_sd_read/p_0_in                     | u_sd_ctrl_top/u_sd_init/sys_rst_n |                3 |             16 |         5.33 |
+| ~cur_state_reg[6]_i_2_n_0  | u_sd_ctrl_top/u_sd_init/res_data[47]_i_1_n_0       | u_sd_ctrl_top/u_sd_init/sys_rst_n |                5 |             38 |         7.60 |
+|  u_clk_wiz_0/inst/clk_out1 |                                                    | u_sd_ctrl_top/u_sd_init/sys_rst_n |               21 |             65 |         3.10 |
++----------------------------+----------------------------------------------------+-----------------------------------+------------------+----------------+--------------+
+
+

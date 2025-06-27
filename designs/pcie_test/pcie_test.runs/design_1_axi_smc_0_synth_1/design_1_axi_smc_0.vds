@@ -1,0 +1,769 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Apr  4 17:47:28 2025
+# Process ID: 54840
+# Current directory: D:/VIVADO231/ku5p/pcie_test/pcie_test.runs/design_1_axi_smc_0_synth_1
+# Command line: vivado.exe -log design_1_axi_smc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_smc_0.tcl
+# Log file: D:/VIVADO231/ku5p/pcie_test/pcie_test.runs/design_1_axi_smc_0_synth_1/design_1_axi_smc_0.vds
+# Journal file: D:/VIVADO231/ku5p/pcie_test/pcie_test.runs/design_1_axi_smc_0_synth_1\vivado.jou
+# Running On: DESKTOP-IDDMGFU, OS: Windows, CPU Frequency: 3693 MHz, CPU Physical cores: 24, Host memory: 34265 MB
+#-----------------------------------------------------------
+source design_1_axi_smc_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1401.492 ; gain = 159.742
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_smc_0
+Command: synth_design -top design_1_axi_smc_0 -part xcku5p-ffvb676-2-i -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 92684
+WARNING: [Synth 8-11067] parameter 'K_MAX_EP_ROUTE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:87]
+WARNING: [Synth 8-11067] parameter 'K_MAX_SC_ROUTE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:88]
+WARNING: [Synth 8-11067] parameter 'K_MAX_CMD_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:89]
+WARNING: [Synth 8-11067] parameter 'K_MAX_LUTRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:90]
+WARNING: [Synth 8-11067] parameter 'K_MAX_BRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:91]
+WARNING: [Synth 8-11067] parameter 'K_MIN_BRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:92]
+WARNING: [Synth 8-11067] parameter 'K_MAX_SYNC_RATIO' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:93]
+WARNING: [Synth 8-11067] parameter 'K_MAX_PIPELINES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:94]
+WARNING: [Synth 8-11067] parameter 'K_LOG_MAX_PIPELINES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:95]
+WARNING: [Synth 8-11067] parameter 'K_MAX_LATENCY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:96]
+WARNING: [Synth 8-11067] parameter 'K_LOG_MAX_LATENCY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:97]
+WARNING: [Synth 8-11067] parameter 'K_AXIS_ARB_TDATA_NUM_BYTES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:98]
+WARNING: [Synth 8-11067] parameter 'K_MAX_USER_BITS_PER_BYTE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:99]
+WARNING: [Synth 8-11067] parameter 'K_MAX_INFO_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:100]
+WARNING: [Synth 8-11067] parameter 'K_MAX_OUTSTANDING_REQ' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:101]
+WARNING: [Synth 8-11067] parameter 'K_AXI_SIZE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:102]
+WARNING: [Synth 8-11067] parameter 'K_AXI_BURST_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:103]
+WARNING: [Synth 8-11067] parameter 'K_AXI_RESP_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:104]
+WARNING: [Synth 8-11067] parameter 'K_AXI_LAST_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:105]
+WARNING: [Synth 8-11067] parameter 'K_AXI_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:106]
+WARNING: [Synth 8-11067] parameter 'K_AXI_EXCL_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:107]
+WARNING: [Synth 8-11067] parameter 'K_AXI_LOCK_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:108]
+WARNING: [Synth 8-11067] parameter 'K_AXI3_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:109]
+WARNING: [Synth 8-11067] parameter 'K_AXI3_LOCK_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:110]
+WARNING: [Synth 8-11067] parameter 'K_AXI_PROT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:111]
+WARNING: [Synth 8-11067] parameter 'K_AXI_QOS_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:112]
+WARNING: [Synth 8-11067] parameter 'K_AXI_CACHE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:113]
+WARNING: [Synth 8-11067] parameter 'K_MAX_ACCEPTANCE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:114]
+WARNING: [Synth 8-11067] parameter 'K_MAX_FANOUT' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:115]
+WARNING: [Synth 8-11067] parameter 'K_MAX_READ_WATERMARK' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:116]
+WARNING: [Synth 8-11067] parameter 'K_MAX_BURST_LENGTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:117]
+WARNING: [Synth 8-11067] parameter 'CH_R' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:164]
+WARNING: [Synth 8-11067] parameter 'CH_W' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:165]
+WARNING: [Synth 8-11067] parameter 'CH_AR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:166]
+WARNING: [Synth 8-11067] parameter 'CH_AW' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:167]
+WARNING: [Synth 8-11067] parameter 'CH_B' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:168]
+WARNING: [Synth 8-11067] parameter 'CLK_DOWN' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:170]
+WARNING: [Synth 8-11067] parameter 'CLK_SYNC_ALIAS' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:171]
+WARNING: [Synth 8-11067] parameter 'CLK_ASYNC' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:172]
+WARNING: [Synth 8-11067] parameter 'CLK_SYNC' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:173]
+WARNING: [Synth 8-11067] parameter 'CLK_UP' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:174]
+WARNING: [Synth 8-11067] parameter 'CLKEN_NONE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:176]
+WARNING: [Synth 8-11067] parameter 'CLKEN_S' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:177]
+WARNING: [Synth 8-11067] parameter 'CLKEN_M' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:178]
+WARNING: [Synth 8-11067] parameter 'CLKEN_S_AND_M' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:179]
+WARNING: [Synth 8-11067] parameter 'ARB_BYPASS' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:180]
+WARNING: [Synth 8-11067] parameter 'ARB_ROUNDROBIN' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:181]
+WARNING: [Synth 8-11067] parameter 'ARB_SLAVE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:182]
+WARNING: [Synth 8-11067] parameter 'FIFO_LUTRAM' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:183]
+WARNING: [Synth 8-11067] parameter 'FIFO_BRAM' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:184]
+WARNING: [Synth 8-11067] parameter 'FIFO_NONE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:185]
+WARNING: [Synth 8-11067] parameter 'FIFO_IP_XPM_MEMORY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:186]
+WARNING: [Synth 8-11067] parameter 'FIFO_IP_FG' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:187]
+WARNING: [Synth 8-11067] parameter 'FIFO_IP_XPM_FIFO' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:188]
+WARNING: [Synth 8-11067] parameter 'K_T_STRUCT_EXCLUSIVE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:230]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_ADDR_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:232]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_RDATA_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:240]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_WDATA_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:244]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_BRSP_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:247]
+WARNING: [Synth 8-11067] parameter 'K_T_EXCLUSIVE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:253]
+WARNING: [Synth 8-11067] parameter 'K_T_ADDR_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:256]
+WARNING: [Synth 8-11067] parameter 'K_T_DATA_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:259]
+WARNING: [Synth 8-11067] parameter 'K_T_BRSP_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:261]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_ADDR_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:263]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_DATA_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:265]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BRSP_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:267]
+WARNING: [Synth 8-11067] parameter 'K_T_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:270]
+WARNING: [Synth 8-11067] parameter 'K_T_SEG_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:304]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_ADDR_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:305]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_DATA_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:308]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BRSP_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:310]
+WARNING: [Synth 8-11067] parameter 'K_T_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:313]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_AXPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:341]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_WPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:348]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_RPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:352]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:357]
+WARNING: [Synth 8-11067] parameter 'K_T_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:361]
+WARNING: [Synth 8-11067] parameter 'K_MAX_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:362]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_AXVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:547]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_WVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:557]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_RVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:561]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:566]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_AXVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:574]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_WVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:584]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_RVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:588]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_BVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:593]
+WARNING: [Synth 8-11067] parameter 'K_T_VECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:596]
+WARNING: [Synth 8-11067] parameter 'K_MAX_VECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:597]
+WARNING: [Synth 8-11067] parameter 'K_MAX_NUM_MNOC' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:674]
+WARNING: [Synth 8-11067] parameter 'K_MAX_NUM_SNOC' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:675]
+WARNING: [Synth 8-11067] parameter 'NOC_MAX_SCHED_LEN' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:676]
+WARNING: [Synth 8-11067] parameter 'NOC_MAX_TKN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:677]
+WARNING: [Synth 8-11067] parameter 'NOC_MAX_RTR_ADDR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:678]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_EJECT' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:679]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_ASCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:680]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_DESCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:681]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_THROUGH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:682]
+WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_THROUGH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:683]
+WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_ASCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:684]
+WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_DESCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:685]
+INFO: [Common 17-14] Message 'Synth 8-11067' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-11014] non-net output port 'upsizer_valid' cannot be initialized at declaration in SystemVerilog mode [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/66be/hdl/sc_node_v1_0_vl_rfs.sv:2589]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2895.512 ; gain = 379.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_5Y9LOC' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:789]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3_one_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/synth/bd_afc3_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_one_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/synth/bd_afc3_one_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'bd_afc3_psr0_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/synth/bd_afc3_psr0_0.vhd:74]
+	Parameter C_FAMILY bound to: kintexuplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'd:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/synth/bd_afc3_psr0_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132157' bound to instance 'POR_SRL_I' of component 'SRL16' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132157]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132157]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_afc3_psr0_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/synth/bd_afc3_psr0_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_afc3_psr0_0' is unconnected for instance 'psr0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:830]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_afc3_psr0_0' is unconnected for instance 'psr0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:830]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_afc3_psr0_0' is unconnected for instance 'psr0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:830]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_afc3_psr0_0' is unconnected for instance 'psr0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:830]
+WARNING: [Synth 8-7023] instance 'psr0' of module 'bd_afc3_psr0_0' has 10 connections declared, but only 6 given [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:830]
+INFO: [Synth 8-638] synthesizing module 'bd_afc3_psr_aclk_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/synth/bd_afc3_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: kintexuplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'd:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/synth/bd_afc3_psr_aclk_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'bd_afc3_psr_aclk_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/synth/bd_afc3_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_afc3_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:837]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_afc3_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:837]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_afc3_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:837]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_afc3_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:837]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_afc3_psr_aclk_0' has 10 connections declared, but only 6 given [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:837]
+INFO: [Synth 8-638] synthesizing module 'bd_afc3_psr_aclk1_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/synth/bd_afc3_psr_aclk1_0.vhd:74]
+	Parameter C_FAMILY bound to: kintexuplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'd:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/synth/bd_afc3_psr_aclk1_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'bd_afc3_psr_aclk1_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/synth/bd_afc3_psr_aclk1_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_afc3_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:844]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_afc3_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:844]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_afc3_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:844]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_afc3_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:844]
+WARNING: [Synth 8-7023] instance 'psr_aclk1' of module 'bd_afc3_psr_aclk1_0' has 10 connections declared, but only 6 given [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:844]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_5Y9LOC' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:789]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_1TZX5BB' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:853]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3_m00e_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_14/synth/bd_afc3_m00e_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_m00e_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_14/synth/bd_afc3_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_1TZX5BB' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:853]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3_m00s2a_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_13/synth/bd_afc3_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_m00s2a_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_13/synth/bd_afc3_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3_s00a2s_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_7/synth/bd_afc3_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_s00a2s_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_7/synth/bd_afc3_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_USCCV8' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1224]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3_s00mmu_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_4/synth/bd_afc3_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_s00mmu_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_4/synth/bd_afc3_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3_s00sic_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_6/synth/bd_afc3_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_s00sic_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_6/synth/bd_afc3_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3_s00tr_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_5/synth/bd_afc3_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_s00tr_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_5/synth/bd_afc3_s00tr_0.sv:53]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_afc3_s00tr_0' is unconnected for instance 's00_transaction_regulator' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1780]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_afc3_s00tr_0' is unconnected for instance 's00_transaction_regulator' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1780]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_afc3_s00tr_0' has 86 connections declared, but only 84 given [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1780]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_USCCV8' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1224]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_Y7M43I' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1867]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3_sarn_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_8/synth/bd_afc3_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (0#1) [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_sarn_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_8/synth/bd_afc3_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3_sawn_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_10/synth/bd_afc3_sawn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_sawn_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_10/synth/bd_afc3_sawn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3_sbn_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_12/synth/bd_afc3_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_sbn_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_12/synth/bd_afc3_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3_srn_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_9/synth/bd_afc3_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized1' [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (0#1) [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized1' (0#1) [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized2' [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (0#1) [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized2' (0#1) [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_srn_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_9/synth/bd_afc3_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3_swn_0' [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_11/synth/bd_afc3_swn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized3' [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized3' [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized3' (0#1) [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized3' (0#1) [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_swn_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_11/synth/bd_afc3_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_Y7M43I' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1867]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (0#1) [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:53]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_5Y9LOC does not have driver. [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:807]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[303] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[302] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[301] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[300] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[299] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[298] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[297] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[296] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[295] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[294] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[293] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[292] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[291] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[290] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[289] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[288] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[287] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[286] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[285] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[284] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[283] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[282] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[281] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[280] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[279] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[278] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[277] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[276] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[275] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[274] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[273] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[272] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[271] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[270] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[269] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[268] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[267] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[266] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[265] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[264] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[263] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[262] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[261] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[260] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[259] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[258] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[257] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[256] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[255] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[254] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[253] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[252] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[251] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[250] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[249] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[248] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[247] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[246] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[245] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[244] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[243] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[242] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[241] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[240] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[239] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[238] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[237] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[236] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[235] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[234] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[233] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[232] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[231] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[230] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[229] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[228] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[227] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[226] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[225] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[224] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[223] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[222] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[221] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[220] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[219] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[218] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[217] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[216] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[215] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[214] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[213] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[212] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[211] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[210] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[209] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[208] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3126.273 ; gain = 610.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3144.141 ; gain = 628.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3144.141 ; gain = 628.121
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3156.207 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/bd_afc3_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/bd_afc3_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/bd_afc3_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/bd_afc3_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/bd_afc3_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/bd_afc3_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/bd_afc3_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [d:/VIVADO231/ku5p/pcie_test/pcie_test.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/bd_afc3_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [D:/VIVADO231/ku5p/pcie_test/pcie_test.runs/design_1_axi_smc_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/VIVADO231/ku5p/pcie_test/pcie_test.runs/design_1_axi_smc_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_axi_smc_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_axi_smc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_axi_smc_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_axi_smc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 31 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3338.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  FDR => FDRE: 36 instances
+  SRL16 => SRL16E: 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.220 . Memory (MB): peak = 3340.828 ; gain = 1.945
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 3340.828 ; gain = 824.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku5p-ffvb676-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 3340.828 ; gain = 824.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/VIVADO231/ku5p/pcie_test/pcie_test.runs/design_1_axi_smc_0_synth_1/dont_touch.xdc, line 89).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addra_to_rd_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addra_to_rd_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addra_to_rd_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addra_to_rd_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addra_to_rd_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addrb_to_wr_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addrb_to_wr_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addrb_to_wr_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addrb_to_wr_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addrb_to_wr_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[1].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[1].inst_xpm_memory . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 3340.828 ; gain = 824.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3340.828 ; gain = 824.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 38    
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 8     
+	   2 Input    1 Bit       Adders := 3     
+	   3 Input    1 Bit       Adders := 2     
++---XORs : 
+	   2 Input      6 Bit         XORs := 10    
+	   2 Input      1 Bit         XORs := 103   
++---Registers : 
+	              188 Bit    Registers := 2     
+	              161 Bit    Registers := 2     
+	              147 Bit    Registers := 1     
+	              146 Bit    Registers := 1     
+	               47 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 33    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 63    
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 28    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 188   
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 1     
+	   2 Input   47 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 8     
+	   4 Input    7 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 8     
+	   2 Input    4 Bit        Muxes := 5     
+	   4 Input    3 Bit        Muxes := 5     
+	  11 Input    3 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 34    
+	   2 Input    1 Bit        Muxes := 116   
+	   6 Input    1 Bit        Muxes := 25    
+	  12 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1824 (col length:96)
+BRAMs: 960 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/FDRE_inst) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/FDRE_inst) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/FDRE_inst) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_afc3.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_afc3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 3340.828 ; gain = 824.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                                               | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14  | 
+|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14  | 
+|inst/\s00_nodes/s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 23              | RAM32M16 x 2   | 
+|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 147             | RAM32M16 x 11  | 
+|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 146             | RAM32M16 x 11  | 
+|xpm_memory_sdpram__parameterized3:/xpm_memory_base_inst                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12  | 
+|xpm_memory_sdpram__parameterized3:/xpm_memory_base_inst                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12  | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 3497.723 ; gain = 981.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 3508.477 ; gain = 992.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                                               | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14  | 
+|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14  | 
+|inst/\s00_nodes/s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 23              | RAM32M16 x 2   | 
+|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 147             | RAM32M16 x 11  | 
+|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 146             | RAM32M16 x 11  | 
+|xpm_memory_sdpram__parameterized3:/xpm_memory_base_inst                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12  | 
+|xpm_memory_sdpram__parameterized3:/xpm_memory_base_inst                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12  | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 3537.945 ; gain = 1021.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 3545.074 ; gain = 1029.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 3545.074 ; gain = 1029.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 3545.074 ; gain = 1029.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 3545.074 ; gain = 1029.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 3545.074 ; gain = 1029.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 3545.074 ; gain = 1029.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name      | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | shift_reg_reg | 32     | 1          | 0      | 1       | 0      | 0      | 0      | 
+|dsrl__1     | shift_reg_reg | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |    84|
+|2     |LUT2     |   163|
+|3     |LUT3     |    84|
+|4     |LUT4     |   134|
+|5     |LUT5     |   141|
+|6     |LUT6     |   291|
+|7     |MUXF7    |     1|
+|8     |RAM32M16 |    57|
+|9     |SRL16    |     3|
+|10    |SRL16E   |    10|
+|11    |SRLC32E  |     8|
+|12    |FDCE     |    42|
+|13    |FDR      |    20|
+|14    |FDRE     |  1469|
+|15    |FDSE     |    63|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 3545.074 ; gain = 1029.055
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14552 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:43 . Memory (MB): peak = 3545.074 ; gain = 832.367
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 3545.074 ; gain = 1029.055
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.281 . Memory (MB): peak = 3553.102 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3607.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 80 instances were transformed.
+  FDR => FDRE: 20 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 57 instances
+  SRL16 => SRL16E: 3 instances
+
+Synth Design complete | Checksum: 4a3bba22
+INFO: [Common 17-83] Releasing license: Synthesis
+124 Infos, 250 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 3607.289 ; gain = 2133.918
+INFO: [Common 17-1381] The checkpoint 'D:/VIVADO231/ku5p/pcie_test/pcie_test.runs/design_1_axi_smc_0_synth_1/design_1_axi_smc_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_smc_0, cache-ID = 8cea80a938a9d993
+INFO: [Coretcl 2-1174] Renamed 155 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/VIVADO231/ku5p/pcie_test/pcie_test.runs/design_1_axi_smc_0_synth_1/design_1_axi_smc_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_smc_0_utilization_synth.rpt -pb design_1_axi_smc_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  4 17:48:53 2025...

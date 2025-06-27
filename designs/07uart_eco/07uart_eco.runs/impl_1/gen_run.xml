@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xcku5p-ffvb676-2-i" LaunchTime="1733618390">
+  <File Type="ROUTE-PWR" Name="uart_eco_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="uart_eco.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="uart_eco_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="uart_eco_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="uart_eco.msk"/>
+  <File Type="ROUTE-CLK" Name="uart_eco_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="uart_eco.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="uart_eco_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="uart_eco.bit"/>
+  <File Type="BG-DRC" Name="uart_eco.drc"/>
+  <File Type="BG-BGN" Name="uart_eco.bgn"/>
+  <File Type="BG-BIN" Name="uart_eco.bin"/>
+  <File Type="BITSTR-RBT" Name="uart_eco.rbt"/>
+  <File Type="BITSTR-NKY" Name="uart_eco.nky"/>
+  <File Type="BITSTR-BMM" Name="uart_eco_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="uart_eco.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="uart_eco_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="uart_eco.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="uart_eco_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="uart_eco.ltx"/>
+  <File Type="BOOT-PDI-FILE" Name="uart_eco_soc.pdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="uart_eco.npi"/>
+  <File Type="OPT-DRC" Name="uart_eco_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="uart_eco.rbd"/>
+  <File Type="OPT-HWDEF" Name="uart_eco.hwdef"/>
+  <File Type="PLACE-IO" Name="uart_eco_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="uart_eco_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="uart_eco_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="uart_eco_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="uart_eco_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="uart_eco_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="uart_eco_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="uart_eco_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="uart_eco_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="uart_eco_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="uart_eco_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="uart_eco_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="uart_eco_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="uart_eco_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="uart_eco_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="uart_eco_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="uart_eco_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="uart_eco_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="uart_eco_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="uart_eco_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="uart_eco_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="uart_eco_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="uart_eco_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="uart_eco_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="uart_eco_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="uart_eco_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="uart_eco_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="uart_eco_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="uart_eco_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="uart_eco_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="uart_eco_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="uart_eco_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="uart_eco_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="uart_eco_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="uart_eco.pdi"/>
+  <File Type="PL-PDI-FILE" Name="uart_eco_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="uart_eco.rcfi"/>
+  <File Type="CFI_FILE" Name="uart_eco.cfi"/>
+  <File Type="RNPI_FILE" Name="uart_eco.rnpi"/>
+  <File Type="ROUTE-RQS" Name="uart_eco_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="uart_eco_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/usart_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/usart_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_eco.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="uart_eco"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/uart_eco.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/uart_eco.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

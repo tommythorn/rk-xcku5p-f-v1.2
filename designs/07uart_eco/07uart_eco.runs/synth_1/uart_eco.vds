@@ -1,0 +1,246 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Dec  8 08:39:53 2024
+# Process ID: 29500
+# Current directory: D:/VIVADO23/ku5p/07uart_eco/07uart_eco.runs/synth_1
+# Command line: vivado.exe -log uart_eco.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_eco.tcl
+# Log file: D:/VIVADO23/ku5p/07uart_eco/07uart_eco.runs/synth_1/uart_eco.vds
+# Journal file: D:/VIVADO23/ku5p/07uart_eco/07uart_eco.runs/synth_1\vivado.jou
+# Running On: DESKTOP-IDDMGFU, OS: Windows, CPU Frequency: 3700 MHz, CPU Physical cores: 24, Host memory: 34265 MB
+#-----------------------------------------------------------
+source uart_eco.tcl -notrace
+Command: synth_design -top uart_eco -part xcku5p-ffvb676-2-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3084
+INFO: [Synth 8-11241] undeclared symbol 'clk_badrate', assumed default net type 'wire' [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/usart_rx.v:35]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2867.457 ; gain = 378.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'uart_eco' [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/uart_eco.v:1]
+INFO: [Synth 8-6157] synthesizing module 'usart_rx' [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/usart_rx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'usart_rx' (0#1) [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/usart_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'usart_tx' [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/usart_tx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'usart_tx' (0#1) [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/usart_tx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uart_eco' (0#1) [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/uart_eco.v:1]
+WARNING: [Synth 8-6014] Unused sequential element baud_counter_reg was removed.  [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/usart_rx.v:47]
+WARNING: [Synth 8-6014] Unused sequential element baud_rat_clk_reg was removed.  [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/usart_rx.v:35]
+WARNING: [Synth 8-7137] Register rx_valid_flag_pre2_reg in module usart_rx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/usart_rx.v:30]
+WARNING: [Synth 8-7137] Register rx_valid_flag_pre1_reg in module usart_rx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/usart_rx.v:51]
+WARNING: [Synth 8-7137] Register rx_data_byte_reg_reg in module usart_rx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/usart_rx.v:34]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'usart_tx_inst'. This will prevent further optimization [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/uart_eco.v:25]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'usart_rx_inst'. This will prevent further optimization [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/uart_eco.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2958.016 ; gain = 469.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2975.918 ; gain = 487.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2975.918 ; gain = 487.367
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2975.918 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/constrs_1/new/uart_eco.xdc]
+Finished Parsing XDC File [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/constrs_1/new/uart_eco.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/constrs_1/new/uart_eco.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/uart_eco_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/uart_eco_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3098.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3098.129 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3098.129 ; gain = 609.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku5p-ffvb676-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3098.129 ; gain = 609.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3098.129 ; gain = 609.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3098.129 ; gain = 609.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   20 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input   20 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1824 (col length:96)
+BRAMs: 960 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 3098.129 ; gain = 609.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 3421.320 ; gain = 932.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 3452.000 ; gain = 963.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 3452.000 ; gain = 963.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/VIVADO23/ku5p/07uart_eco/07uart_eco.srcs/sources_1/new/usart_rx.v:51]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 3452.000 ; gain = 963.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 3452.000 ; gain = 963.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 3452.000 ; gain = 963.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 3452.000 ; gain = 963.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 3452.000 ; gain = 963.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 3452.000 ; gain = 963.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY8 |     3|
+|3     |LUT1   |     4|
+|4     |LUT2   |     5|
+|5     |LUT3   |     5|
+|6     |LUT4   |     7|
+|7     |LUT5   |    11|
+|8     |LUT6   |    42|
+|9     |FDCE   |    50|
+|10    |FDPE   |     1|
+|11    |FDRE   |    13|
+|12    |FDSE   |     1|
+|13    |IBUF   |     3|
+|14    |OBUF   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 3452.000 ; gain = 963.449
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 3452.000 ; gain = 841.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 3452.000 ; gain = 963.449
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3462.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3487.668 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+
+Synth Design complete | Checksum: b162512
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 3487.668 ; gain = 2087.969
+INFO: [Common 17-1381] The checkpoint 'D:/VIVADO23/ku5p/07uart_eco/07uart_eco.runs/synth_1/uart_eco.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file uart_eco_utilization_synth.rpt -pb uart_eco_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 08:40:40 2024...

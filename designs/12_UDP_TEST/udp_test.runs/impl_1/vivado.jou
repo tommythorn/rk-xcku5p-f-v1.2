@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Dec  4 19:31:15 2024
+# Process ID: 6660
+# Current directory: D:/VIVADO23/ku5p/12_UDP_TEST/udp_test.runs/impl_1
+# Command line: vivado.exe -log eth_udp_loop.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source eth_udp_loop.tcl -notrace
+# Log file: D:/VIVADO23/ku5p/12_UDP_TEST/udp_test.runs/impl_1/eth_udp_loop.vdi
+# Journal file: D:/VIVADO23/ku5p/12_UDP_TEST/udp_test.runs/impl_1\vivado.jou
+# Running On: DESKTOP-IDDMGFU, OS: Windows, CPU Frequency: 3700 MHz, CPU Physical cores: 24, Host memory: 34265 MB
+#-----------------------------------------------------------
+source eth_udp_loop.tcl -notrace

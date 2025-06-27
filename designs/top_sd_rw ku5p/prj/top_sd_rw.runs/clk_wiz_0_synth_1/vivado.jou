@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat May 10 11:01:23 2025
+# Process ID: 12348
+# Current directory: D:/VIVADO231/ku5p/ref/top_sd_rw ku5p/prj/top_sd_rw.runs/clk_wiz_0_synth_1
+# Command line: vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file: D:/VIVADO231/ku5p/ref/top_sd_rw ku5p/prj/top_sd_rw.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file: D:/VIVADO231/ku5p/ref/top_sd_rw ku5p/prj/top_sd_rw.runs/clk_wiz_0_synth_1\vivado.jou
+# Running On: DESKTOP-IDDMGFU, OS: Windows, CPU Frequency: 3693 MHz, CPU Physical cores: 24, Host memory: 34265 MB
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace

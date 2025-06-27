@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               64M
+Start Address      0x00000000
+End Address        0x03FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00545CA3    Dec  2 21:15:56 2024    D:/VIVADO23/ku5p/ddr4_0_ex/ddr4_0_ex.runs/impl_1/example_top.bit

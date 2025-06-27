@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               64M
+Start Address      0x00000000
+End Address        0x03FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x004B8103    Dec  8 08:46:35 2024    D:/VIVADO231/ku5p/07uart_eco/07uart_eco.runs/impl_1/uart_eco.bit

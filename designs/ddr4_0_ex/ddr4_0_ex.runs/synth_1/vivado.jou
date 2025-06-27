@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu May  8 19:38:45 2025
+# Process ID: 19940
+# Current directory: D:/VIVADO231/ku5p/ddr4_0_ex/ddr4_0_ex.runs/synth_1
+# Command line: vivado.exe -log example_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source example_top.tcl
+# Log file: D:/VIVADO231/ku5p/ddr4_0_ex/ddr4_0_ex.runs/synth_1/example_top.vds
+# Journal file: D:/VIVADO231/ku5p/ddr4_0_ex/ddr4_0_ex.runs/synth_1\vivado.jou
+# Running On: DESKTOP-IDDMGFU, OS: Windows, CPU Frequency: 3693 MHz, CPU Physical cores: 24, Host memory: 34265 MB
+#-----------------------------------------------------------
+source example_top.tcl -notrace
