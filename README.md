@@ -1,4 +1,4 @@
-# Collateral for an RK-XCKU5P-F V1.2 XCKU5P dev board
+# Collateral for the RK-XCKU5P-F V1.2 XCKU5P development board
 
 ![Top view of the FPGA board](images/RK-XCKU5P-F-V1.2.webp)
 
@@ -10,7 +10,7 @@ unpacked everything are reorganized it slightly, but have not renamed
 any files.
 
 ## The Manual
-[RK-XCKU5P-F V1.2.pdf](RK-XCKU5P-F V1.2.pdf)
+[RK-XCKU5P-F V1.2](RK-XCKU5P-F-V1.2.pdf)
 
 Some relevant facts about this board (which as of this writing I don't
 not have):
