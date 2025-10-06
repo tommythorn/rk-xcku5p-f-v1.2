@@ -12,8 +12,7 @@ any files.
 ## The Manual
 [RK-XCKU5P-F V1.2](RK-XCKU5P-F-V1.2.pdf)
 
-Some relevant facts about this board (which as of this writing I don't
-not have):
+Some relevant facts about this board:
 - FPGA: Xilinx XCKU5P-2ffvb676I (Note: speed grade -2!)
 - DDR4: 2 GiB (2 x MT40A512M16LY-0625E @ 2666 Mbps) [1]
 - QSPI FLASH: 512 Mib MX25U51245GZ4I00
