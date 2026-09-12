@@ -1,5 +1,7 @@
 # Collateral for the RK-XCKU5P-F V1.2 XCKU5P development board
 
+Design files, manuals, schematics, and example designs.
+
 ![Top view of the FPGA board](images/RK-XCKU5P-F-V1.2.webp)
 
 This *unbranded* XCKU5P development board is widely available on eBay
@@ -8,6 +10,18 @@ I'm making it available here.  Note, it was originally distributed as
 a Zip file with Zip files inside (which had Zip files etc).  I
 unpacked everything and reorganized it slightly, but have not renamed
 any files.
+
+What makes this board uniquely interesting is the XCKU5P which of this
+writing is the Goldilocks of FPGAs; it's the largest and fastest FPGA
+with support by a gratis Vivado toolchain.  It used to be very expensive,
+but rumor has it that a lot of telecom New-Old-Stock has hit the market,
+driving the price down.
+
+The board is particularly interesting to me due to the non-trivial 32-bit
+wide 2 GiB DDR4 external memory and a good mix of external peripherals.
+Unfortunately, no HDMI.  There is a very similar board on the market _with_
+HDMI but that board has only 1 GiB which is far too little for my target
+application (SmolRV64).
 
 ## The Manual
 [RK-XCKU5P-F V1.2](RK-XCKU5P-F-V1.2.pdf)
@@ -27,5 +41,5 @@ Some relevant facts about this board:
 - 200 MHz on-board oscillator
 - 4 LEDs, 4 buttons, fan header (with FPGA control)
 
-[1] Note, BG1 isn't routed, which could matter for TwinDie devices,
-should one consider replacing the original DDR4.
+[1] Note, BG1 isn't routed, which means no TwinDie devices, and thus,
+you can at most rework the board to 4 GiB, not 8 GiB (much sadness).
