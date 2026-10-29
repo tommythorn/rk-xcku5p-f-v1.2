@@ -2,7 +2,7 @@
 
 Design files, manuals, schematics, and example designs.
 
-![Top view of the FPGA board](images/RK-XCKU5P-F-V1.2.webp)
+[![SmolRV64 running X11 and Quake](images/SmolRV64-7f8f5a94-quake.jpeg)](https://github.com/tommythorn/smolrv64)
 
 This *unbranded* XCKU5P development board is widely available on eBay
 and can be found on AliExpress.  The collateral isn't easy to find so
